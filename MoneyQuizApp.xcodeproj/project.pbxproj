@@ -16,6 +16,8 @@
 		D67A877C282BE49F006840E5 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A877B282BE49F006840E5 /* QuizViewController.swift */; };
 		D67A877E282BE592006840E5 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67A877D282BE592006840E5 /* ScoreViewController.swift */; };
 		D67A8780282CCDF7006840E5 /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = D67A877F282CCDF7006840E5 /* quiz.csv */; };
+		D67A8784282DFE72006840E5 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = D67A8782282DFE71006840E5 /* correct.png */; };
+		D67A8785282DFE72006840E5 /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = D67A8783282DFE71006840E5 /* incorrect.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		D67A877B282BE49F006840E5 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		D67A877D282BE592006840E5 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		D67A877F282CCDF7006840E5 /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
+		D67A8782282DFE71006840E5 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
+		D67A8783282DFE71006840E5 /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +76,18 @@
 				D67A877028294183006840E5 /* Assets.xcassets */,
 				D67A877228294183006840E5 /* LaunchScreen.storyboard */,
 				D67A877528294183006840E5 /* Info.plist */,
+				D67A8781282DFE71006840E5 /* image */,
 			);
 			path = MoneyQuizApp;
+			sourceTree = "<group>";
+		};
+		D67A8781282DFE71006840E5 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				D67A8782282DFE71006840E5 /* correct.png */,
+				D67A8783282DFE71006840E5 /* incorrect.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +148,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D67A8784282DFE72006840E5 /* correct.png in Resources */,
+				D67A8785282DFE72006840E5 /* incorrect.png in Resources */,
 				D67A877428294183006840E5 /* LaunchScreen.storyboard in Resources */,
 				D67A877128294183006840E5 /* Assets.xcassets in Resources */,
 				D67A876F28294180006840E5 /* Main.storyboard in Resources */,

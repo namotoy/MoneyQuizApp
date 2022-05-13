@@ -41,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="66"/>
+            <point key="canvasLocation" x="-71" y="66"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="sF1-hH-IpR">
@@ -61,7 +61,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVy-IO-Zgw">
-                                <rect key="frame" x="142" y="453" width="96" height="44"/>
+                                <rect key="frame" x="42" y="453" width="334" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
@@ -72,7 +72,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxu-lF-XFh">
-                                <rect key="frame" x="142" y="518" width="96" height="44"/>
+                                <rect key="frame" x="42" y="518" width="334" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
@@ -83,7 +83,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBS-Ih-sIw">
-                                <rect key="frame" x="142" y="593" width="96" height="44"/>
+                                <rect key="frame" x="34" y="593" width="342" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
@@ -94,7 +94,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3U-Zh-015">
-                                <rect key="frame" x="142" y="666" width="96" height="44"/>
+                                <rect key="frame" x="42" y="666" width="325" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button">
@@ -104,13 +104,17 @@
                                     <action selector="btnactionWithSender:" destination="wZM-Zu-En4" eventType="touchUpInside" id="QbP-Iw-DoV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXP-gL-why">
-                                <rect key="frame" x="182" y="111" width="130" height="56"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXP-gL-why">
+                                <rect key="frame" x="42" y="111" width="334" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EpG-YT-Tr0">
+                                <rect key="frame" x="20" y="20" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GRi-rc-XaQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -120,8 +124,10 @@
                         <outlet property="answerButton2" destination="kxu-lF-XFh" id="Hac-b0-GQr"/>
                         <outlet property="answerButton3" destination="rBS-Ih-sIw" id="scV-zj-M3f"/>
                         <outlet property="answerButton4" destination="F3U-Zh-015" id="pFk-LC-1gx"/>
+                        <outlet property="judgeImageView" destination="EpG-YT-Tr0" id="DxT-58-rz8"/>
                         <outlet property="quizNumberLabel" destination="UXP-gL-why" id="UEp-jg-Ujk"/>
                         <outlet property="quizTextView" destination="Cl9-Wx-qIS" id="CJU-oY-Bda"/>
+                        <segue destination="sPU-uI-KwH" kind="presentation" identifier="toScoreVC" id="QGk-Dj-cVD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tF2-a4-kVn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -131,13 +137,13 @@
         <!--Score View Controller-->
         <scene sceneID="4qB-NU-xsB">
             <objects>
-                <viewController id="sPU-uI-KwH" customClass="ScoreViewController" customModule="MoneyQuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="sPU-uI-KwH" customClass="ScoreViewController" customModule="MoneyQuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V2D-Xw-oZh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZ5-Ox-ojE">
-                                <rect key="frame" x="172" y="140" width="71" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZ5-Ox-ojE">
+                                <rect key="frame" x="53" y="140" width="295" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -150,15 +156,21 @@
                                 <buttonConfiguration key="configuration" style="plain" title="トップに戻る">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="toTopButtonAction:" destination="sPU-uI-KwH" eventType="touchUpInside" id="npq-XS-wmz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xUM-JA-gjg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="PZ5-Ox-ojE" id="bc1-Ex-CNn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BUg-XP-1Cg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1319" y="66"/>
+            <point key="canvasLocation" x="1456.521739130435" y="65.625"/>
         </scene>
     </scenes>
     <resources>
