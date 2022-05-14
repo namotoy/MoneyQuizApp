@@ -34,6 +34,15 @@ class QuizViewController: UIViewController {
         answerButton3.setTitle(quizArray[4], for: .normal)
         answerButton4.setTitle(quizArray[5], for: .normal)
         
+        answerButton1.layer.borderWidth = 3
+        answerButton1.layer.borderColor = UIColor.black.cgColor
+        answerButton2.layer.borderWidth = 3
+        answerButton2.layer.borderColor = UIColor.black.cgColor
+        answerButton3.layer.borderWidth = 3
+        answerButton3.layer.borderColor = UIColor.black.cgColor
+        answerButton4.layer.borderWidth = 3
+        answerButton4.layer.borderColor = UIColor.black.cgColor
+        
         // Do any additional setup after loading the view.
     }
     
