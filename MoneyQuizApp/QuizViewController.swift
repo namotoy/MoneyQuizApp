@@ -24,7 +24,7 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         csvArray = loadCSV(fileName: "quiz")
-        print(csvArray)
+        csvArray.shuffle()
         
         quizArray = csvArray[quizCount].components(separatedBy: ",")
         quizNumberLabel.text = "第\(quizCount + 1)問"
