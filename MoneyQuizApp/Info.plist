@@ -23,5 +23,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>CFBundleDisplayName</key>
+	<string>お金のクイズ</string>
 </dict>
 </plist>
